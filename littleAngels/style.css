@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: linear-gradient(#693000,#6d7904,#035a0a);
+}
+.wrapper_home{
+    height: 100vh;
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    background: url(assets/seku.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: change 25s infinite ease-in-out;
+    
+}
+@keyframes change{
+    30%{
+        background: linear-gradient(#693000,#6d7904,#035a0a);
+    }
+    50%{
+        background: linear-gradient(#dd6706,#9faf0f,#06aa14);
+    }
+    80%{
+        background: linear-gradient(#472306,#434b03,#06530b);
+    }
+}
+
+.logo{
+    color: #ffffff;
+    display: flex;
+    height: 100%;
+    width: 95%;
+    justify-content: space-between;
+   margin: auto;
+    /* background: url(assets/seku.jpg); */
+}
+.join{
+    padding: 10px;
+    background: transparent;
+    backdrop-filter: blur(11px);
+    border-radius: 10px;
+    border: 1px solid rgb(153, 152, 152);
+    color: #ffffff;
+    font-size: 1.1em;
+    cursor: pointer;
+    
+}
+.join:hover{
+    transition: .1s;
+    color: rgb(214, 5, 5);
+    font-size: 1em;
+    font-weight: 500;
+}
+.both_forms{
+    transform: scale(0);
+}
+.both_forms.active{
+    transform: scale(1);
+}
+.form{
+    position: absolute;
+    
+    background: transparent;
+    padding: 25px;
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    border: 2px solid #06aa14;
+    top: 20%;
+    left: 15%;
+    right: 15%;
+    width: 35%;
+    margin: auto;
+    transform: scale(0);
+    z-index: 100;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    
+}
+.form .label{
+    color: #0dee1c;
+    font-size: 1.5em;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.form .wrap{
+    display: flex;
+    justify-content: right;
+}
+.form .wrap p{
+    color: rgb(6, 6, 172);
+    padding: 15px;
+}
+.form .wrap button{
+    background: transparent;
+    padding: 15px;
+    color: blue;
+    border: 0 solid gray;
+    font-size: 1.2em;
+    transition: .6s;
+    cursor:pointer;
+}
+.form .wrap button:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+.form input{
+    padding: 15px;
+    border-radius: 10px;
+    background-color: black;
+    color: #ffffff;
+    border: 1px rgb(176, 110, 238) solid;
+}
+.form label{
+    color: bisque;
+}
+
+
+.login{
+    position: absolute;
+    
+    background: transparent;
+    padding: 25px;
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    border: 2px solid #06aa14;
+    top: 20%;
+    left: 15%;
+    right: 15%;
+    width: 35%;
+    margin: auto;
+    transform: scale(1);
+    z-index: 100;
+}
+.login form{
+    display: flex;
+    flex-direction: column;
+    
+}
+.login .label{
+    color: #0dee1c;
+    font-size: 1.5em;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.login .wrap{
+    display: flex;
+    justify-content: right;
+}
+.login .wrap p{
+    color: rgb(6, 6, 172);
+    padding: 15px;
+}
+.login .wrap button{
+    background: transparent;
+    padding: 15px;
+    color: blue;
+    border: 0 solid gray;
+    font-size: 1.2em;
+    transition: .6s;
+    cursor:pointer;
+}
+.login .wrap button:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+.login input{
+    padding: 15px;
+    border-radius: 10px;
+    background-color: black;
+    color: #ffffff;
+    border: 1px rgb(176, 110, 238) solid;
+}
+.login label{
+    color: bisque;
+}
+
+
+
+
+
+
+
+
+.mynav a{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px;
+    transition: 1s;
+}
+
+.mynav .home,
+.mynav a:hover{
+    
+    color: rgb(248, 52, 52);
+
+}
+.mynav{
+    margin-top: 15px;
+    margin-right: 10%;
+    
+}
+.our_story{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    color: black;
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    
+}
+.our_story p{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 10px;
+    color: black;
+    font-weight: 400;
+    animation: changeColor 25s infinite ease-in-out;
+}
+.our_story h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: rgb(77, 76, 76);
+    text-decoration: underline;
+    animation: changeColor 25s infinite ;
+    animation-timing-function:linear;
+}
+@keyframes changeColor{
+    30%{
+        
+    }
+    50%{
+        color: rgb(5, 0, 0);
+    }
+    80%{
+        color: #ffffff;
+    }
+}
